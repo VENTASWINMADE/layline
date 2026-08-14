@@ -452,6 +452,7 @@ footer.big .fb p{font-size:14px;font-weight:300;max-width:300px}
 .newscard h3{font-size:16px;line-height:1.28;margin:0 0 8px;font-weight:750}
 .nc-ico{width:46px;height:46px;flex:0 0 46px;background:var(--navy);display:flex;align-items:center;justify-content:center;border-radius:50%}
 .nc-ico svg{width:24px;height:24px;stroke:var(--gold);fill:none}
+.nc-ico.light{background:#fff;border:1px solid var(--border)}.nc-ico.light img{width:30px;height:30px;object-fit:contain}.nc-ico.flag{background:#fff;overflow:hidden;padding:0}.nc-ico.flag svg{width:46px;height:46px}
 
 .urow:hover{padding-left:10px;background:rgba(255,255,255,.035)}
 .uinfo{min-width:0}
@@ -1654,7 +1655,7 @@ const CLUBES=[
 
 /* ================= NOTICIAS ================= */
 const NOTICIAS=[
-{id:"mundial-ilca-2026-irlanda",cat:"Vela mundial",fecha:"12 de agosto de 2026",
+{id:"mundial-ilca-2026-irlanda",ic:"ilca7",cat:"Vela mundial",fecha:"12 de agosto de 2026",
   t:"El Mundial ILCA 2026 se corre en Irlanda: la cita máxima de la clase olímpica",
   d:"Del 23 al 30 de agosto, Dún Laoghaire (Irlanda) recibe el Campeonato Mundial de ILCA 7, el evento más importante de la principal clase olímpica individual.",
   cuerpo:["La localidad de Dún Laoghaire, uno de los epicentros históricos de la vela irlandesa, es la sede del Campeonato Mundial de ILCA 7 (ex Laser) 2026, que reúne a la élite mundial de la clase olímpica individual masculina entre el 23 y el 30 de agosto.",
@@ -1662,7 +1663,7 @@ const NOTICIAS=[
    "La mirada chilena está puesta en esta clase, donde el país vive un buen momento: el navegante olímpico Clemente Seguel viene de asegurar el cupo-país en ILCA 7 para los Juegos Panamericanos Lima 2027, confirmando a Chile entre los programas ILCA a seguir en el continente.",
    "El calendario internacional de la clase continúa en septiembre con el Mundial de ILCA 6, también en Irlanda, cerrando un agosto y septiembre cargados de vela olímpica en el hemisferio norte."],
   src:"ILCA Sailing · Afloat.ie",url:"https://afloat.ie/sail/events/ilca-worlds-2026"},
-{id:"copa-del-rey-mapfre-2026",cat:"Vela mundial",fecha:"8 de agosto de 2026",
+{id:"copa-del-rey-mapfre-2026",ic:"oceanicos",cat:"Vela mundial",fecha:"8 de agosto de 2026",
   img:COPAIMG,
   gal:[COPAIMG,"img/218263702ece6183.jpg","img/3080543465c3766c.jpg","img/d26024c5449cae72.jpg","_fotos-nuevas-copa/86f63fbf63f2e55d.jpg","_fotos-nuevas-copa/e4755eb5e21e47d2.jpg","_fotos-nuevas-copa/aabd9f8eeb2d7e9c.jpg","_fotos-nuevas-copa/40f520a179c50078.jpg","_fotos-nuevas-copa/2ef16ebb9fe067b0.jpg","_fotos-nuevas-copa/a53da195b135a624.jpg","_fotos-nuevas-copa/3d59ad08c7dd824d.jpg","_fotos-nuevas-copa/f97a0874437b559f.jpg","_fotos-nuevas-copa/62df7959a54cec9c.jpg","_fotos-nuevas-copa/ccc21541116e5a28.jpg","_fotos-nuevas-copa/8bb8847b555037de.jpg","_fotos-nuevas-copa/17c40a356001ac4b.jpg","_fotos-nuevas-copa/7d1ba2005644cdc3.jpg"],galCred:"Fotos: 44ª Copa del Rey MAPFRE",
   t:"Copa del Rey MAPFRE 2026: Banderas gana por novena vez y el Rey sube al podio",
@@ -1671,7 +1672,7 @@ const NOTICIAS=[
    "En lo deportivo, el triunfo absoluto de la 44ª edición fue para el Nola del estonio Taavet Hinrikus. Javier Banderas hizo historia al ganar su novena Copa del Rey al mando del Teatro del Soho San Miguel, tras una jornada final de remontadas, y el Hispania —el barco del Rey Felipe VI— subió al podio con la plata en su clase, su primer podio en esta regata que él mismo preside cada verano.",
    "Organizada por el Real Club Náutico de Palma, la Copa del Rey MAPFRE es la cita de referencia del verano europeo y una de las regatas de monotipos y ORC con más historia del mundo, un espejo de hacia dónde va la vela de alto nivel internacional."],
   src:"Infobae · Copa del Rey MAPFRE",url:"https://www.infobae.com/america/agencias/2026/08/08/el-hispania-de-felipe-vi-sube-al-podio-y-banderas-gana-su-novena-copa-del-rey-mapfre/"},
-{id:"pirata-los-bandidos-europeo",clase:"pirata",cat:"Vela chilena",fecha:"27 de julio de 2026",
+{id:"pirata-los-bandidos-europeo",ic:"chile",clase:"pirata",cat:"Vela chilena",fecha:"27 de julio de 2026",
   t:"“Los Bandidos” fueron subcampeones en el Europeo Juvenil de Pirata",
   d:"La dupla chilena Franz Rompeltien y Yoram Werwitzke terminó segunda en el Junioreuropameisterschaft & Internationale Deutsche Juniorenmeisterschaft de la clase Pirata, disputado en Alemania.",
   cuerpo:["Un ajustado segundo lugar obtuvo la tripulación chilena de “Los Bandidos” en el Campeonato Europeo Juvenil y Nacional Juvenil Alemán de la clase Pirata. Franz Rompeltien, al timón, y Yoram Werwitzke, de tripulante, navegando con el sail number CHI 69, cerraron el campeonato con 45 puntos netos, detrás de la dupla alemana Franz Erpenbeck y Charlotte Meyer.",
@@ -1679,7 +1680,7 @@ const NOTICIAS=[
    "El resultado se suma a una temporada 2026 donde la vela juvenil chilena ha viajado y competido en el extranjero con resultados destacados en distintas clases, desde el Pirata hasta el ILCA y el Lightning."],
   src:"Clase Pirata Chile · Instagram (@clasepiratachile)",url:"https://www.instagram.com/p/DbR2cgDIA0O/",
   img:"img/f38aa7e862ef8b68.jpg",imgCred:"Clase Pirata Chile"},
-{id:"clemente-seguel-panamericanos-ilca7",cat:"Vela chilena",fecha:"24 de julio de 2026",
+{id:"clemente-seguel-panamericanos-ilca7",ic:"ilca7",cat:"Vela chilena",fecha:"24 de julio de 2026",
   t:"Clemente Seguel aseguró cupo-país en ILCA 7 para Lima 2027",
   d:"El navegante olímpico terminó 16° entre 63 regatistas en el San Pedro Olympic Classes Regatta de Los Ángeles y se convirtió en el segundo mejor timonel americano de la prueba.",
   cuerpo:["El navegante olímpico Clemente Seguel consiguió el cupo-país en la clase ILCA 7 para los Juegos Panamericanos Lima 2027, tras finalizar 16° en la clasificación general entre 63 deportistas de nivel mundial en el San Pedro Olympic Classes Regatta (OCR), disputado en Los Ángeles, Estados Unidos. Con ese resultado, se convirtió en el segundo mejor timonel americano de la regata.",
@@ -1688,7 +1689,7 @@ const NOTICIAS=[
    "El cupo conseguido por Seguel es de país, no individual: Chile queda con un lugar asegurado en la regata de ILCA 7 de Lima 2027, aunque el nombre del timonel que finalmente lo ocupe se resolverá en el proceso selectivo que organice FEDEVELA de cara a la cita panamericana."],
   src:"FEDEVELA · Instagram (@fedevelachi)",url:"https://www.instagram.com/p/DbMBpHDFP4L/",
   img:"img/bdcc3adf404fcc22.jpg",imgCred:"FEDEVELA"},
-{id:"lightning-panamericanos",cat:"Vela chilena",fecha:"22 de julio de 2026",
+{id:"lightning-panamericanos",ic:"lightning",cat:"Vela chilena",fecha:"22 de julio de 2026",
   t:"El Doctorado clasificó a Chile a los Panamericanos",
   d:"La tripulación de “El Doctorado” ganó el Abierto Canadiense de Lightning y aseguró el cupo-país para los Juegos Panamericanos Lima 2027.",
   cuerpo:["Un doble logro consiguió la tripulación de “El Doctorado”, integrada por Felipe Robles, Paula Herman y Pipa Cisternas, tras quedarse con el título en el Abierto Canadiense de Lightning y conseguir el cupo-país para los Juegos Panamericanos Lima 2027.",
@@ -1701,7 +1702,7 @@ const NOTICIAS=[
   img:"img/841c304952abfbad.jpg",
   gal:["img/f02b295bae299e36.jpg","img/61b8d024812ff1a3.jpg","img/ff773f61c63f8814.jpg","img/6daf87e30dcb7d9f.jpg"],
   galCred:"Haven Media / Carly Starck, vía @intlightning · Buffalo Canoe Club"},
-{id:"otono-ilca-herradura",cat:"Vela chilena",fecha:"22 de julio de 2026",
+{id:"otono-ilca-herradura",ic:"ilca7",cat:"Vela chilena",fecha:"22 de julio de 2026",
   t:"La Herradura definió el Campeonato Otoño ILCA",
   d:"Cuarta fecha y final del circuito con timoneles de Arica a Talcahuano. Clemente Seguel, Agustín Soto y Baltazar Román se quedaron con los títulos.",
   cuerpo:["Con participación de timoneles de Arica, Antofagasta, Algarrobo, Coquimbo y Talcahuano se realizó, en el Yachting Club La Herradura, la cuarta fecha y final del Campeonato Otoño de la clase ILCA, que comenzó en enero y tuvo regatas también en Talcahuano y Algarrobo.",
@@ -1712,22 +1713,22 @@ const NOTICIAS=[
    "Para las tres flotas ILCA el calendario continúa en octubre, cuando Algarrobo reciba los campeonatos nacionales: el de ILCA 6 entre el 10 y el 13, y el de ILCA 4 y 7 entre el 15 y el 18. Ahí se define el título de la temporada."],
   src:"Federación de Vela de Chile",url:"https://www.fedevela.cl/ilca-en-la-herradura-se-definio-el-campeonato-otono-articulo-noticias-1784746741.html",
   img:"img/b6e35ec65ae716bb.jpg",imgCred:"Campeonato Otoño ILCA · archivo LayLine"},
-{id:"regata-glorias-navales-2026",clase:"oceanicos",cat:"Vela chilena",fecha:"23 de mayo de 2026",
+{id:"regata-glorias-navales-2026",ic:"oceanicos",clase:"oceanicos",cat:"Vela chilena",fecha:"23 de mayo de 2026",
 img:"img/64ecbc9ac82e62d2.jpg",
 t:"Espinakers al viento en la Regata Glorias Navales 2026",
 d:"La flota oce\u00e1nica sali\u00f3 a la bah\u00eda de Algarrobo en la tradicional regata de Glorias Navales, organizada por la Cofrad\u00eda N\u00e1utica del Pac\u00edfico.",
 cuerpo:["La Regata Glorias Navales 2026 se corri\u00f3 en la Cofrad\u00eda N\u00e1utica del Pac\u00edfico, en Algarrobo, en la tradicional cita que la vela chilena dedica cada mayo a conmemorar el Combate Naval de Iquique. La flota oce\u00e1nica sali\u00f3 a la bah\u00eda con espinakers desplegados y el borde costero de Conc\u00f3n a Vi\u00f1a del Mar como tel\u00f3n de fondo.","Es una de las regatas con m\u00e1s historia del litoral central: re\u00fane a cruceros y veleros de regata de varios clubes en una jornada que mezcla competencia y homenaje a la tradici\u00f3n naval del pa\u00eds.","Las im\u00e1genes corresponden al registro profesional de la regata (\u00a9 Jankovic's Villatoro)."],gal:["img/14dd2828c7538e1b.jpg","img/d241a4bfc38cd4de.jpg","img/2dab4ce8645d7c3f.jpg"],galCred:"\u00a9 Jankovic's Villatoro"},
-{id:"grand-prix-optimist-regional-2026",clase:"optimist",cat:"Vela chilena",fecha:"19 de abril de 2026",
+{id:"grand-prix-optimist-regional-2026",ic:"optimist",clase:"optimist",cat:"Vela chilena",fecha:"19 de abril de 2026",
 img:"img/4602abff183368dd.jpg",
 t:"El semillero a toda vela: Grand Prix Regional de Optimist 2026",
 d:"La flota de Optimist cop\u00f3 el litoral central en una nueva fecha del Grand Prix Regional, con decenas de timoneles j\u00f3venes en cancha.",
 cuerpo:["El Grand Prix Regional de Optimist 2026 reuni\u00f3 a la flota infantil y juvenil de la clase frente al litoral central, con timoneles de distintos clubes compartiendo cancha en una de las fechas m\u00e1s numerosas del circuito nacional.","El Optimist es la escuela de todos los navegantes chilenos: en sus 2,31 metros los timoneles de hasta 15 a\u00f1os dan sus primeras bordadas de competencia. Ver decenas de velas con la insignia de la clase y el distintivo CHI frente a la bah\u00eda confirma la salud del semillero de la vela nacional.","Las im\u00e1genes corresponden al registro profesional de la regata (\u00a9 Jankovic's Villatoro)."],gal:["img/a4a0761ae72658fa.jpg","img/4b4e0e2b62987d1b.jpg","img/e2c62adba208a784.jpg"],galCred:"\u00a9 Jankovic's Villatoro"},
-{id:"nacional-melges24-rapel-2026",clase:"melges24",cat:"Vela chilena",fecha:"17 de febrero de 2026",
+{id:"nacional-melges24-rapel-2026",ic:"melges24",clase:"melges24",cat:"Vela chilena",fecha:"17 de febrero de 2026",
 img:"img/6f2c1caeabda3f2f.jpg",
 t:"Planeo en el Rapel: Nacional de Melges 24 2026",
 d:"La flota chilena de Melges 24 disput\u00f3 su Campeonato Nacional en el Lago Rapel, con largadas apretadas y planeos a todo viento.",
 cuerpo:["El Campeonato Nacional de Melges 24 2026 se corri\u00f3 en el Lago Rapel, uno de los escenarios interiores m\u00e1s ventosos de Chile, con la flota nacional de la clase midi\u00e9ndose durante varias jornadas de regatas cortas y exigentes.","El Melges 24 es una quilla deportiva de alt\u00edsimo rendimiento: casco liviano, tripulaci\u00f3n al trapecio y planeo en cuanto sopla. En Rapel, con el tel\u00f3n de fondo de los cerros y los aerogeneradores, las tripulaciones \u2014Black Mamba, Wild Child, Capitan\u00eda y compa\u00f1\u00eda\u2014 protagonizaron largadas apretadas y planeos espectaculares.","Las im\u00e1genes corresponden al registro profesional del campeonato (\u00a9 Jankovic's Villatoro)."],gal:["img/ab2089ac31b62d18.jpg","img/42d7ec521f0ed5a5.jpg","img/4d9b67399bd6bd2b.jpg"],galCred:"\u00a9 Jankovic's Villatoro"},
-{id:"nacional-j70-semipro",cat:"Vela chilena",fecha:"11 de enero de 2026",
+{id:"nacional-j70-semipro",ic:"j70",cat:"Vela chilena",fecha:"11 de enero de 2026",
   t:"Semipro se coronó campeón nacional de J70",
   d:"Cuatro días y nueve pruebas en Algarrobo. La tripulación de Matías Seguel cerró el nacional con 15 puntos, ocho menos que su escolta.",
   cuerpo:["El Campeonato Nacional de la clase J70 se corrió entre el 8 y el 11 de enero en la Cofradía Náutica del Pacífico, con catorce barcos en cancha y nueve pruebas disputadas. El campeonato fue válido con cinco pruebas y aplicó un descarte desde la sexta corrida.",
@@ -1738,12 +1739,12 @@ cuerpo:["El Campeonato Nacional de Melges 24 2026 se corri\u00f3 en el Lago Rape
    "El calendario de la clase continúa con fechas durante toda la temporada en la Cofradía Náutica del Pacífico, y el próximo nacional —ya de la temporada 2026— está agendado entre el 24 y el 29 de octubre en Algarrobo."],
   src:"Federación de Vela de Chile",url:"https://www.fedevela.cl/campeonato-nacional-verano-j70-articulo-resultados-1768241940.html",
   regata:"nacional-j70-2026"},
-{id:"sudamericano-lightning-2025-algarrobo",clase:"lightning",cat:"Vela chilena",fecha:"30 de diciembre de 2025",
+{id:"sudamericano-lightning-2025-algarrobo",ic:"lightning",clase:"lightning",cat:"Vela chilena",fecha:"30 de diciembre de 2025",
 img:"img/f85c907fd8533ed3.jpg",
 t:"Algarrobo fue sede del Sudamericano de Lightning 2025",
 d:"La bah\u00eda de Algarrobo reuni\u00f3 a la flota sudamericana de la clase Lightning en la Cofrad\u00eda N\u00e1utica del Pac\u00edfico, con tripulaciones de Chile y el continente.",
 cuerpo:["El Campeonato Sudamericano de Lightning 2025 se disput\u00f3 a fines de diciembre en la bah\u00eda de Algarrobo, organizado por la Cofrad\u00eda N\u00e1utica del Pac\u00edfico. La clase \u2014una quilla ligera de tres tripulantes\u2014 reuni\u00f3 a las mejores tripulaciones del continente, con botes de Chile y Ecuador, entre otros, compartiendo cancha frente al litoral central.","El Lightning tiene en Chile una de sus flotas m\u00e1s activas y competitivas, con circuito propio y presencia constante en el calendario nacional. Algarrobo, epicentro hist\u00f3rico de la vela chilena, ofreci\u00f3 condiciones exigentes de viento y mar que pusieron a prueba la t\u00e9cnica de las tripulaciones a lo largo de las jornadas.","Las im\u00e1genes de esta cobertura corresponden al registro profesional del campeonato (\u00a9 Jankovic's Villatoro)."],gal:["img/5dd66403e40df857.jpg","img/04732ae09aa75949.jpg","img/050e6ae3795a1e8a.jpg"],galCred:"\u00a9 Jankovic's Villatoro"},
-{id:"regata-interclubes-cnp-2025",clase:"oceanicos",cat:"Vela chilena",fecha:"noviembre de 2025",
+{id:"regata-interclubes-cnp-2025",ic:"oceanicos",clase:"oceanicos",cat:"Vela chilena",fecha:"noviembre de 2025",
 img:"img/86870a84071bb5b8.jpg",
 t:"La flota oce\u00e1nica se midi\u00f3 en la Regata Interclubes de Algarrobo",
 d:"Quillas de crucero y regata compartieron cancha en la Cofrad\u00eda N\u00e1utica del Pac\u00edfico, en una nueva edici\u00f3n de la tradicional Regata Interclubes.",
@@ -1758,7 +1759,7 @@ cuerpo:["La Regata Interclubes 2025 reuni\u00f3 a la flota oce\u00e1nica del lit
    "El circuito se corre con cinco tripulantes por barco y una regla de género que obliga a incluir al menos una mujer en la tripulación, medida que aceleró el desarrollo de programas femeninos de alto rendimiento en todo el mundo.",
    "Sudamérica no tiene todavía equipo propio en SailGP, aunque Brasil ha manifestado interés. Para los navegantes chilenos, el circuito es hoy la principal vitrina de lo que puede hacer un barco a vela cuando deja de tocar el agua."],
   src:"sail-world.com",url:"https://www.sail-world.com/news/292068/Emirates-GBR-crowned-SailGP-2025-Season-Champions"},
-{id:"copa-fedevela-2025",clase:"ilca6",cat:"Vela chilena",fecha:"septiembre de 2025",
+{id:"copa-fedevela-2025",ic:"chile",clase:"ilca6",cat:"Vela chilena",fecha:"septiembre de 2025",
 img:"img/19ef77e1f54fce38.jpg",
 t:"La vela juvenil chilena se luci\u00f3 en la Copa Fedevela 2025",
 d:"Optimist, ILCA y 420 coparon la bah\u00eda de Algarrobo en dos d\u00edas de la Copa Fedevela, la gran cita del semillero nacional.",
@@ -1773,7 +1774,7 @@ cuerpo:["La Copa Fedevela 2025 reuni\u00f3 en Algarrobo a la mejor vela juvenil 
    "En el otro extremo del rango, el Hanse 360 ganó por lo contrario: meter mucho volumen habitable y facilidad de manejo en apenas once metros, a un precio que lo pone al alcance de una familia. Es el tipo de barco que más se vende en Europa y el que más ha crecido en el mercado sudamericano.",
    "El Nautitech 48 Open, premiado en multicascos, refleja el auge del catamarán de crucero: estabilidad, espacio y poco calado, condiciones muy valoradas para navegar en zonas como los canales del sur de Chile."],
   src:"yachtingworld.com",url:"https://www.yachtingworld.com/yachts-and-gear/best-yachts-of-2025-european-yacht-of-the-year-2025-winners-156466"},
-{id:"vendee-globe-dalin",img:"img/d3e5d188cbecb4e7.jpg",cat:"Regata oceánica",fecha:"14 de enero de 2025",
+{id:"vendee-globe-dalin",ic:"oceanicos",img:"img/d3e5d188cbecb4e7.jpg",cat:"Regata oceánica",fecha:"14 de enero de 2025",
   t:"Vendée Globe 2024-25: Charlie Dalin hace historia",
   d:"El francés dio la vuelta al mundo en solitario, sin escalas y sin asistencia, en 64 días y 19 horas, batiendo el récord anterior por más de nueve días.",
   cuerpo:["Charlie Dalin, a bordo del IMOCA MACIF Santé Prévoyance, ganó la décima edición de la Vendée Globe con un tiempo de 64 días, 19 horas y 22 minutos, batiendo la marca anterior de Armel Le Cléac'h por más de nueve días.",
@@ -1783,7 +1784,7 @@ cuerpo:["La Copa Fedevela 2025 reuni\u00f3 en Algarrobo a la mejor vela juvenil 
    "Navegar en solitario durante más de dos meses implica dormir en ciclos de veinte a cuarenta minutos, reparar el barco en movimiento y tomar decisiones meteorológicas sin nadie con quien contrastarlas. Es, por lejos, la prueba más dura del deporte.",
    "Para la vela chilena la Vendée Globe funciona como referencia y como aspiración: ningún chileno ha completado todavía la regata, aunque el país tiene tradición oceánica propia en travesías por los canales australes y en la Regata Chiloé."],
   src:"vendeeglobe.org",url:"https://www.vendeeglobe.org/en/article/charlie-dalin-wins-2024-vendee-globe"},
-{id:"j40-boty-2025",img:"img/6ad0c207d787cde0.jpg",cat:"Embarcaciones del año",fecha:"Diciembre de 2024",
+{id:"j40-boty-2025",ic:"oceanicos",img:"img/6ad0c207d787cde0.jpg",cat:"Embarcaciones del año",fecha:"Diciembre de 2024",
   t:"J/40, Velero del Año 2025 de Cruising World",
   d:"El J/40 de J/Boats ganó el Boat of the Year 2025 en la categoría Mejor Overall por su equilibrio entre rendimiento y confort.",
   cuerpo:["El J/40 de J/Boats fue elegido Boat of the Year 2025 en la categoría Mejor Overall por la revista Cruising World, el premio más importante del crucero en Norteamérica.",
@@ -1984,7 +1985,7 @@ function cardNoticia(n){
 }
 
 var ILCA_LOGO="img/a2ece122bfa63221.svg";
-var LOGOS={"skeeta":IMG.skeeta,"420":"img/2ec570a681405cc3.png","470":"img/72b04a2d568320fe.png","snipe":"img/8ee3478a866a1067.png","finn":"img/747284399a1e3771.png","pirata":"img/fcd1418293faee1c.svg","sunfish":"img/520acecd890e0002.png","j70":"img/18f806829d5bb72f.png","j24":"img/33f9f1edf7a2a8f7.png","melges24":"img/07124e3ebbd7f3ea.png","soto40":"img/77a59f1bc18b5d44.png","lightning":"img/8255b213bcfa6c69.png","oceanicos":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8ZyBmaWxsPSIjMTcyOTNiIiBzdHJva2U9IiMxNzI5M2IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICA8cGF0aCBkPSJNNTEgMTUgQzY0IDMwIDc0IDQ2IDgyIDYzIEw1MSA2MyBaIi8+CiAgICA8cGF0aCBkPSJNNDYgMjQgQzM5IDM4IDMxIDUxIDIyIDYzIEw0NiA2MyBaIi8+CiAgPC9nPgogIDxsaW5lIHgxPSI1MCIgeTE9IjEyIiB4Mj0iNTAiIHkyPSI2NCIgc3Ryb2tlPSIjMTcyOTNiIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0xNiA2OCBMODQgNjggQzc5IDc5IDcwIDg0IDUwIDg0IEMzMCA4NCAyMSA3OSAxNiA2OCBaIiBmaWxsPSIjMTcyOTNiIi8+CiAgPHBhdGggZD0iTTEyIDkwIHE5IC02IDE4IDAgdDE4IDAgdDE4IDAgdDEyIDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE3MjkzYiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==",ilca7:ILCA_LOGO,ilca6:ILCA_LOGO,ilca4:ILCA_LOGO,optimist:"img/6329d090658312bf.jpg"};
+var LOGOS={"skeeta":IMG.skeeta,"420":"img/2ec570a681405cc3.png","470":"img/72b04a2d568320fe.png","snipe":"img/8ee3478a866a1067.png","finn":"img/747284399a1e3771.png","pirata":"img/pirata-icon.png","sunfish":"img/520acecd890e0002.png","j70":"img/18f806829d5bb72f.png","j24":"img/33f9f1edf7a2a8f7.png","melges24":"img/07124e3ebbd7f3ea.png","soto40":"img/77a59f1bc18b5d44.png","lightning":"img/8255b213bcfa6c69.png","oceanicos":"img/oceanicos-icon.png",ilca7:ILCA_LOGO,ilca6:ILCA_LOGO,ilca4:ILCA_LOGO,optimist:"img/6329d090658312bf.jpg"};
 function cardClase(c){
   const cont=REGATAS.filter(r=>r.clases.indexOf(c.n)>=0).length;
   const lg=LOGOS[c.id];
@@ -2046,10 +2047,16 @@ function heroRotate(){
     n=next;
   }, 4200);
 }
+var CHILE_FLAG='<svg viewBox="0 0 60 60" preserveAspectRatio="xMidYMid slice"><rect width="60" height="30" fill="#fff"/><rect y="30" width="60" height="30" fill="#D52B1E"/><rect width="24" height="30" fill="#0039A6"/><path d="M12.0 7.5 L13.8 12.6 L19.1 12.7 L14.9 15.9 L16.4 21.1 L12.0 18.0 L7.6 21.1 L9.1 15.9 L4.9 12.7 L10.2 12.6 Z" fill="#fff"/></svg>';
+function newsIco(n){
+  if(n.ic==='chile') return '<div class="nc-ico flag">'+CHILE_FLAG+'</div>';
+  if(n.ic && window.LOGOS && LOGOS[n.ic]) return '<div class="nc-ico light"><img src="'+LOGOS[n.ic]+'" alt=""></div>';
+  return '<div class="nc-ico">'+SAIL_SVG+'</div>';
+}
 function cardNewsHome(n){
   return '<a class="newscard rv" href="#/noticia/'+n.id+'">'+
-    '<div class="rc-head"><div class="nc-ico">'+SAIL_SVG+'</div>'+
-    '<div class="rc-meta"><span class="rc-date">'+esc(n.cat)+'</span><span class="rc-cls">'+esc(n.fecha)+'</span></div></div>'+
+    '<div class="rc-head">'+newsIco(n)+
+    '<div class="rc-meta"><span class="rc-date">'+esc(n.fecha)+'</span><span class="rc-cls">'+esc(n.cat)+'</span></div></div>'+
     '<h3>'+esc(n.t)+'</h3>'+
     '<div class="rc-club">'+esc(n.src)+'</div>'+
     '<span class="rc-go">Leer nota →</span></a>';
